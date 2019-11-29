@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DeepSound</title>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
+    <script src="js/genres.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/siriwave.js"></script>
+    <script src="js/sketch.min.js"></script>
+    <script src="js/pills.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <img src="img/deepsound.png" alt="DeepSound" id="logo" class="logo-big">
+    <div id="container">
+        <div id="message-upload" class="message">
+            <p>This is a demo of music genre recognition using a convolutional neural network running inside your browser. To start, click the button below and upload a song. A visualization will be shown, presenting the network's belief about the genre of the song at any given point in time.</p>
+            <p>This app has been tested on Google Chrome. It most likely won't work on other browsers.</p>
+        </div>
+        <div id="upload">
+            <form enctype="multipart/form-data">
+                <div>
+                    <img src="img/cloud-upload.png">
+                    <input name="filearg" type="file">
+                </div>
+            </form>
+        </div>
+        <div id="message-wave" class="message">
+            <p>Please wait while your song is being processed. This may take a minute or two depending on the length of the song.</p>
+        </div>
+        <div id="wave" class="modal"></div>
+        <div id="pills"></div>
+        <div id="piechart-container">
+            <canvas id="piechart" height="450" width="400"></canvas>
+            <div id="legend">
+                <ul>
+                    <li><span style="background: #0033cc;"></span> Blues</li>
+                    <li><span style="background: #6600ff;"></span> Classical</li>
+                    <li><span style="background: #cc6600;"></span> Country</li>
+                    <li><span style="background: #ff66cc;"></span> Disco</li>
+                    <li><span style="background: #660066;"></span> HipHop</li>
+                    <li><span style="background: #cccc00;"></span> Jazz</li>
+                    <li><span style="background: #999966;"></span> Metal</li>
+                    <li><span style="background: #00cc66;"></span> Pop</li>
+                    <li><span style="background: #ffcc66;"></span> Reggae</li>
+                    <li><span style="background: #cc0000;"></span> Rock</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
