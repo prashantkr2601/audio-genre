@@ -1,7 +1,7 @@
 CNN for Live Music Genre Recognition
 ====================================
 
-Convolutional Neural Networks for Live Music Genre Recognition is a project aimed at creating a neural network recognizing music genre and providing a user-friendly visualization for the network's current belief of the genre of a song. The project was created for the 24-hour Braincode Hackathon in Warsaw by Piotr Kozakowski, Jakub Królak, Łukasz Margas and Bartosz Michalak.
+Convolutional Neural Networks for Live Music Genre Recognition is a project aimed at creating a neural network recognizing music genre and providing a user-friendly visualization for the network's current belief of the genre of a song.
 
 The model has since been significantly improved and rewritten to TensorFlow.js, so that it doesn't require a backend - the network can be run inside of the user's browser.
 
